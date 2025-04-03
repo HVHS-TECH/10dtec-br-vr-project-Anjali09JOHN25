@@ -9,6 +9,11 @@
     <body>
     <a-scene>
       <a-sky color="lightblue"></a-sky>
+
+      <a-plane rotation="-90 0 0" position="0 0 0" color="mediumseagreen"
+      width="100" height="100">
+          
+  </a-plane>
       
        <!-- Put this inside the <a-scene> -->
       <a-entity 
@@ -28,7 +33,63 @@
       position="0 0 -2"
       rotation="-90 0 90"
       ></a-entity>
+
+      <a-entity 
+      ply-model="src:Tree.ply"
+      position="5 -1.2 -2"
+      rotation="-90 0 90"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Dog House.ply"
+      position="3 -1.2 3"
+      rotation="-90 -90 90"
+      scale =" 1 1 1"
+      
+    
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Clouds.ply"
+     rotation="-90 -90 90"
+      animation="
+      property: position;
+      from: -15 4 2;
+      to: 10 4 2;
+      dur:50000;
+      loop:true;
+      dir:alternate;
+      "
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Clouds.ply"
+      rotation="-90 -90 90"
+      animation="
+      property: position;
+      from: -13 8 -2;
+      to: 12 8 -2;
+      dur:50000;
+      loop:true;
+      dir:alternate;
+      "
+      ></a-entity>
+
+      
+      <a-entity 
+      ply-model="src:Clouds 2.ply"
+      rotation="-90 -90 90"
+      animation="
+      property: position;
+      from: -10 6 5;
+      to: 15 6 5;
+      dur:50000;
+      loop:true;
+      dir:alternate;
+      "
+      ></a-entity>
                  
     </a-scene>
   </body>
 </html>
+
